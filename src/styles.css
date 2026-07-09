@@ -181,11 +181,10 @@
 
 @utility card-hover {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-@utility card-hover:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px -10px oklch(0.55 0.22 295 / 0.15);
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px -10px oklch(0.55 0.22 295 / 0.15);
+  }
 }
 
 @utility animate-fade-in {
@@ -203,10 +202,9 @@
 @utility no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
-}
-
-@utility no-scrollbar::-webkit-scrollbar {
-  display: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @layer utilities {
