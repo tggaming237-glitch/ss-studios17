@@ -4,20 +4,20 @@ import { AnimatedSection } from "../components/AnimatedSection";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About | SS Thumbnail Studio" },
+      { title: "About | SS Studios" },
       {
         name: "description",
         content:
-          "SS Thumbnail Studio creates professional YouTube thumbnails that help creators increase clicks and grow their channels.",
+          "SS Studios creates professional YouTube thumbnails that help creators increase clicks and grow their channels.",
       },
       {
         property: "og:title",
-        content: "About | SS Thumbnail Studio",
+        content: "About | SS Studios",
       },
       {
         property: "og:description",
         content:
-          "SS Thumbnail Studio creates professional YouTube thumbnails that help creators increase clicks and grow their channels.",
+          "SS Studios creates professional YouTube thumbnails that help creators increase clicks and grow their channels.",
       },
     ],
   }),
@@ -33,7 +33,7 @@ function AboutPage() {
             About
           </span>
           <h1 className="mt-2 font-display text-3xl font-bold sm:text-4xl">
-            About SS Thumbnail Studio
+            About SS Studios
           </h1>
         </AnimatedSection>
 

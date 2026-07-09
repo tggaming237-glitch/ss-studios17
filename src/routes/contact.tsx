@@ -5,20 +5,20 @@ import { AnimatedSection } from "../components/AnimatedSection";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact | SS Thumbnail Studio" },
+      { title: "Contact | SS Studios" },
       {
         name: "description",
         content:
-          "Get in touch with SS Thumbnail Studio via Instagram, Email, or WhatsApp to order your custom YouTube thumbnails.",
+          "Get in touch with SS Studios via Instagram, Email, or WhatsApp to order your custom YouTube thumbnails.",
       },
       {
         property: "og:title",
-        content: "Contact | SS Thumbnail Studio",
+        content: "Contact | SS Studios",
       },
       {
         property: "og:description",
         content:
-          "Get in touch with SS Thumbnail Studio via Instagram, Email, or WhatsApp to order your custom YouTube thumbnails.",
+          "Get in touch with SS Studios via Instagram, Email, or WhatsApp to order your custom YouTube thumbnails.",
       },
     ],
   }),
@@ -57,7 +57,7 @@ function ContactPage() {
             </a>
 
             <a
-              href="mailto:hello@ssthumbnailstudio.com"
+              href="mailto:hello@ssstudios.com"
               className="group flex items-center justify-center gap-3 rounded-xl border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10"
             >
               <Mail className="size-5 text-secondary" />

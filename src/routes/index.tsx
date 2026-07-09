@@ -4,7 +4,7 @@ import { AnimatedSection } from "../components/AnimatedSection";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "SS Thumbnail Studio | High-CTR YouTube Thumbnails" },
+      { title: "SS Studios | High-CTR YouTube Thumbnails" },
       {
         name: "description",
         content:
@@ -12,7 +12,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content: "SS Thumbnail Studio | High-CTR YouTube Thumbnails",
+        content: "SS Studios | High-CTR YouTube Thumbnails",
       },
       {
         property: "og:description",

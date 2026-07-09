@@ -6,7 +6,7 @@ import { thumbnails, categories, type Category } from "../lib/portfolio-data";
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
     meta: [
-      { title: "Portfolio | SS Thumbnail Studio" },
+      { title: "Portfolio | SS Studios" },
       {
         name: "description",
         content:
@@ -14,7 +14,7 @@ export const Route = createFileRoute("/portfolio")({
       },
       {
         property: "og:title",
-        content: "Portfolio | SS Thumbnail Studio",
+        content: "Portfolio | SS Studios",
       },
       {
         property: "og:description",
