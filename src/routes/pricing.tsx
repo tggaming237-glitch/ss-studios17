@@ -9,16 +9,7 @@ export const Route = createFileRoute("/pricing")({
       {
         name: "description",
         content:
-          "Affordable YouTube thumbnail packages: Basic ₹99, Standard ₹199, Premium ₹299.",
-      },
-      {
-        property: "og:title",
-        content: "Pricing | SS Thumbnail Studio",
-      },
-      {
-        property: "og:description",
-        content:
-          "Affordable YouTube thumbnail packages: Basic ₹99, Standard ₹199, Premium ₹299.",
+          "Affordable YouTube thumbnail packages: Basic ₹99, Standard ₹249, Premium ₹499.",
       },
     ],
   }),
@@ -136,7 +127,7 @@ const plans = [
   {
     name: "Standard",
     tagline: "Best value for active creators.",
-    price: 199,
+    price: 249,
     popular: true,
     features: [
       "3 Custom Thumbnails",
@@ -149,7 +140,7 @@ const plans = [
   {
     name: "Premium",
     tagline: "Full channel growth package.",
-    price: 299,
+    price: 499,
     popular: false,
     features: [
       "5 Custom Thumbnails",
