@@ -1,3 +1,5 @@
+import gamingThumb1 from "../assets/pokemon-brick-bronze-thumbnail.png.asset.json";
+
 export type Category = "All" | "Gaming" | "Tech" | "AI" | "Education";
 
 export interface ThumbnailItem {

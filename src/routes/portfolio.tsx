@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import gamingThumb1 from "../assets/pokemon-brick-bronze-thumbnail.png.asset.json";
 import { useState } from "react";
 import { AnimatedSection } from "../components/AnimatedSection";
 import { categories, type Category } from "../lib/portfolio-data";
