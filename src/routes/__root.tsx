@@ -82,16 +82,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "SS Thumbnail Studio | High-CTR YouTube Thumbnails" },
+      { title: "SS Studios | High-CTR YouTube Thumbnails" },
       {
         name: "description",
         content:
-          "Professional AI-assisted YouTube thumbnails for Gaming, Tech, Education and Finance creators. Boost your CTR with SS Thumbnail Studio.",
+          "Professional AI-assisted YouTube thumbnails for Gaming, Tech, Education and Finance creators. Boost your CTR with SS Studios.",
       },
-      { name: "author", content: "SS Thumbnail Studio" },
+      { name: "author", content: "SS Studios" },
       {
         property: "og:title",
-        content: "SS Thumbnail Studio | High-CTR YouTube Thumbnails",
+        content: "SS Studios | High-CTR YouTube Thumbnails",
       },
       {
         property: "og:description",
@@ -100,7 +100,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@SS_ThumbnailStudio" },
+      { name: "twitter:site", content: "@SS_Studios" },
     ],
     links: [
       {
