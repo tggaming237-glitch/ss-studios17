@@ -86,7 +86,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Professional AI-assisted YouTube thumbnails for Gaming, Tech, Education and Finance creators. Boost your CTR with SS Studios.",
+          "Professional AI-assisted YouTube thumbnails for Gaming, Tech, Education and Finance creators.",
       },
       { name: "author", content: "SS Studios" },
       {
@@ -101,6 +101,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@SS_Studios" },
+      { name: "twitter:title", content: "SS Studios | High-CTR YouTube Thumbnails" },
+      { name: "twitter:description", content: "Professional AI-assisted YouTube thumbnails for Gaming, Tech, Education and Finance creators." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0b93d04f-f09f-4f45-b6b5-e0f665bea0e3/id-preview-8042bfdb--0e407045-d661-4982-953d-a72ef464e2f2.lovable.app-1783623454000.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0b93d04f-f09f-4f45-b6b5-e0f665bea0e3/id-preview-8042bfdb--0e407045-d661-4982-953d-a72ef464e2f2.lovable.app-1783623454000.png" },
     ],
     links: [
       {
@@ -120,7 +124,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Space+Grotesk:wght@500;700&display=swap",
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
   }),
   shellComponent: RootShell,
