@@ -1,7 +1,33 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { AnimatedSection } from "../components/AnimatedSection";
-import { thumbnails, categories, type Category } from "../lib/portfolio-data";
+import { categories, type Category } from "../lib/portfolio-data";
+
+type GalleryItem = {
+  id: string;
+  title: string;
+  category: Exclude<Category, "All">;
+  image?: string;
+};
+
+const galleryItems: GalleryItem[] = [
+  // Gaming
+  { id: "gaming-1", title: "Gaming Thumbnail 1", category: "Gaming" },
+  { id: "gaming-2", title: "Gaming Thumbnail 2", category: "Gaming" },
+  { id: "gaming-3", title: "Gaming Thumbnail 3", category: "Gaming" },
+  // Tech
+  { id: "tech-1", title: "Tech Thumbnail 1", category: "Tech" },
+  { id: "tech-2", title: "Tech Thumbnail 2", category: "Tech" },
+  { id: "tech-3", title: "Tech Thumbnail 3", category: "Tech" },
+  // AI
+  { id: "ai-1", title: "AI Thumbnail 1", category: "AI" },
+  { id: "ai-2", title: "AI Thumbnail 2", category: "AI" },
+  { id: "ai-3", title: "AI Thumbnail 3", category: "AI" },
+  // Education
+  { id: "education-1", title: "Education Thumbnail 1", category: "Education" },
+  { id: "education-2", title: "Education Thumbnail 2", category: "Education" },
+  { id: "education-3", title: "Education Thumbnail 3", category: "Education" },
+];
 
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
@@ -31,8 +57,8 @@ function PortfolioPage() {
 
   const filtered =
     active === "All"
-      ? thumbnails
-      : thumbnails.filter((t) => t.category === active);
+      ? galleryItems
+      : galleryItems.filter((t) => t.category === active);
 
   return (
     <div className="px-4 py-16 sm:px-6 lg:px-8">
@@ -78,17 +104,20 @@ function PortfolioPage() {
             <AnimatedSection key={item.id} delay={i * 75}>
               <div className="group overflow-hidden rounded-2xl bg-card-bg ring-1 ring-white/5 card-hover">
                 <div className="relative aspect-video overflow-hidden">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    loading="lazy"
-                    width={1280}
-                    height={720}
-                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                  <div className="absolute right-3 top-3 rounded-full bg-black/60 px-2.5 py-1 text-[10px] font-bold text-white backdrop-blur-sm">
-                    CTR {item.ctr}
-                  </div>
+                  {item.image ? (
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      loading="lazy"
+                      width={1280}
+                      height={720}
+                      className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                  ) : (
+                    <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-white/[0.02]">
+                      <div className="absolute inset-4 rounded-xl border border-dashed border-white/10" />
+                    </div>
+                  )}
                 </div>
                 <div className="p-4">
                   <div className="flex items-center justify-between gap-3">
