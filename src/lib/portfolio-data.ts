@@ -12,7 +12,7 @@ export interface ThumbnailItem {
 export const categories: Category[] = ["All", "Gaming", "Tech", "AI", "Education"];
 
 export const thumbnails: ThumbnailItem[] = [
-  { id: "gaming-1", title: "Gaming Slot 1", category: "Gaming" },
+  { id: "gaming-1", title: "Gaming Slot 1", category: "Gaming", image: gamingThumb1.url },
   { id: "gaming-2", title: "Gaming Slot 2", category: "Gaming" },
   { id: "tech-1", title: "Tech Slot 1", category: "Tech" },
   { id: "tech-2", title: "Tech Slot 2", category: "Tech" },
