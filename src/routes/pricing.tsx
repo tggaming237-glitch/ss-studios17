@@ -136,7 +136,7 @@ const plans = [
   {
     name: "Standard",
     tagline: "Best value for active creators.",
-    price: 199,
+    price: 249,
     popular: true,
     features: [
       "3 Custom Thumbnails",
@@ -149,7 +149,7 @@ const plans = [
   {
     name: "Premium",
     tagline: "Full channel growth package.",
-    price: 299,
+    price: 499,
     popular: false,
     features: [
       "5 Custom Thumbnails",
