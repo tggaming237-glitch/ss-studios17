@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import gamingThumb1 from "../assets/pokemon-brick-bronze-thumbnail.png.asset.json";
 import { useState } from "react";
 import { AnimatedSection } from "../components/AnimatedSection";
 import { categories, type Category } from "../lib/portfolio-data";
@@ -12,7 +13,7 @@ type GalleryItem = {
 
 const galleryItems: GalleryItem[] = [
   // Gaming
-  { id: "gaming-1", title: "Gaming Thumbnail 1", category: "Gaming" },
+  { id: "gaming-1", title: "Gaming Thumbnail 1", category: "Gaming", image: gamingThumb1.url },
   { id: "gaming-2", title: "Gaming Thumbnail 2", category: "Gaming" },
   { id: "gaming-3", title: "Gaming Thumbnail 3", category: "Gaming" },
   // Tech
