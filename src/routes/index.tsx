@@ -102,19 +102,14 @@ function HomePage() {
             {featuredItems.map((item, i) => (
               <AnimatedSection key={item.id} delay={i * 100}>
                 <div className="group overflow-hidden rounded-2xl bg-card-bg ring-1 ring-white/5 card-hover">
-                  <div className="aspect-video overflow-hidden">
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      loading="lazy"
-                      width={1280}
-                      height={720}
-                      className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                    />
+                  <div className="aspect-video overflow-hidden p-2">
+                    <div className="flex h-full w-full items-center justify-center rounded-xl border border-dashed border-white/15 bg-white/[0.02] text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
+                      Upload Thumbnail
+                    </div>
                   </div>
                   <div className="p-4">
                     <div className="flex items-center justify-between">
-                      <span className="text-sm font-semibold">{item.title}</span>
+                      <span className="text-sm font-semibold">Coming Soon</span>
                       <span className="rounded bg-white/5 px-2 py-1 text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
                         {item.category}
                       </span>
@@ -124,6 +119,7 @@ function HomePage() {
               </AnimatedSection>
             ))}
           </div>
+
 
           <div className="mt-8 text-center sm:hidden">
             <Link
