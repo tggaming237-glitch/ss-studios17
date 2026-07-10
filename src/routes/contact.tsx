@@ -45,15 +45,20 @@ function ContactPage() {
         </AnimatedSection>
 
         <AnimatedSection delay={150}>
-          <div className="mt-10 flex flex-col gap-4">
+          <div className="text-center">
+            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">
+              Social Media
+            </span>
+          </div>
+          <div className="mt-4 flex flex-col gap-4">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/ss.studios17"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center justify-center gap-3 rounded-xl border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10"
             >
               <Instagram className="size-5 text-pink-500" />
-              <span className="text-sm font-semibold">Instagram</span>
+              <span className="text-sm font-semibold">@ss.studios17</span>
             </a>
 
             <a
