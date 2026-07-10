@@ -1,4 +1,4 @@
-import gamingThumb1 from "../assets/pokemon-brick-bronze-thumbnail.png.asset.json";
+import gamingThumb1 from "../assets/gaming-thumbnail-1.png.asset.json";
 
 export type Category = "All" | "Gaming" | "Tech" | "AI" | "Education";
 
