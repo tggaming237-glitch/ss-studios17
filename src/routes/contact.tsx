@@ -60,15 +60,33 @@ function ContactPage() {
               <Instagram className="size-5 text-pink-500" />
               <span className="text-sm font-semibold">@ss.studios17</span>
             </a>
+          </div>
+        </AnimatedSection>
 
+        <AnimatedSection delay={250}>
+          <div className="mt-8 text-center">
+            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">
+              Email
+            </span>
+          </div>
+          <div className="mt-4 flex flex-col gap-4">
             <a
-              href="mailto:hello@ssstudios.com"
+              href="mailto:ss.studioss17@gmail.com"
               className="group flex items-center justify-center gap-3 rounded-xl border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10"
             >
               <Mail className="size-5 text-secondary" />
-              <span className="text-sm font-semibold">Email</span>
+              <span className="text-sm font-semibold">ss.studioss17@gmail.com</span>
             </a>
+          </div>
+        </AnimatedSection>
 
+        <AnimatedSection delay={350}>
+          <div className="mt-8 text-center">
+            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">
+              WhatsApp
+            </span>
+          </div>
+          <div className="mt-4 flex flex-col gap-4">
             <a
               href="https://wa.me/1234567890"
               target="_blank"
