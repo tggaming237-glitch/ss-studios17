@@ -1,4 +1,5 @@
 import gamingThumb1 from "../assets/gaming-thumbnail-1.png.asset.json";
+import gamingThumb2 from "../assets/gaming-thumbnail-2.png.asset.json";
 
 export type Category = "All" | "Gaming" | "Tech" | "AI" | "Education";
 
@@ -13,7 +14,7 @@ export const categories: Category[] = ["All", "Gaming", "Tech", "AI", "Education
 
 export const thumbnails: ThumbnailItem[] = [
   { id: "gaming-1", title: "Gaming Slot 1", category: "Gaming", image: gamingThumb1.url },
-  { id: "gaming-2", title: "Gaming Slot 2", category: "Gaming" },
+  { id: "gaming-2", title: "Gaming Slot 2", category: "Gaming", image: gamingThumb2.url },
   { id: "tech-1", title: "Tech Slot 1", category: "Tech" },
   { id: "tech-2", title: "Tech Slot 2", category: "Tech" },
   { id: "ai-1", title: "AI Slot 1", category: "AI" },
